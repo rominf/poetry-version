@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "poetry-version"
-version = "0.1.1"
+version = "0.1.2"
 description = "Python library for extracting version from poetry pyproject.toml file"
 authors = ["Roman Inflianskas <infroma@gmail.com>"]
 license = "Apache-2.0"
@@ -14,7 +14,7 @@ repository = "https://github.com/rominf/poetry-version"
 
 [tool.poetry.dependencies]
 python = "~2.7 || ^3.4"
-tomlkit = "^0.4.6"
+tomlkit = "^0.4.6 || ^0.5.0"
 
 [tool.poetry.dev-dependencies]
 
