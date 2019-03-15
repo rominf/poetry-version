@@ -12,7 +12,7 @@ def extract(source_file):
         d = d.parent
         pyproject_toml_path = d / 'pyproject.toml'
         if pyproject_toml_path.exists():
-            with open(file=pyproject_toml_path) as f:
+            with open(file=str(pyproject_toml_path)) as f:
                 pyproject_toml = tomlkit.parse(string=f.read())
                 if 'tool' in pyproject_toml and 'poetry' in pyproject_toml['tool']:
                     # noinspection PyUnresolvedReferences
