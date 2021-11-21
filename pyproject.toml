@@ -8,7 +8,8 @@ readme = "README.md"
 keywords = ["poetry", "version"]
 classifiers = [
     "Topic :: Software Development :: Build Tools",
-    "Topic :: Software Development :: Libraries :: Python Modules"
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Development Status :: 7 - Inactive"
 ]
 repository = "https://github.com/rominf/poetry-version"
 
