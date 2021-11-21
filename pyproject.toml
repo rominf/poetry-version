@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "poetry-version"
-version = "0.1.5"
-description = "Python library for extracting version from poetry pyproject.toml file"
+version = "0.2.0"
+description = "Python library for extracting version from poetry pyproject.toml file (deprecated)"
 authors = ["Roman Inflianskas <infroma@gmail.com>"]
 license = "Apache-2.0"
 readme = "README.md"

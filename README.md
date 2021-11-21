@@ -1,16 +1,16 @@
-# poetry-version
-Python library for extracting version from poetry pyproject.toml file
+# poetry-version (deprecated)
 
-## Installation
-To install `poetry-version` from [PyPI](https://pypi.org/project/poetry-version/) run:
-```shell
-$ pip install poetry-version
-```
+## What to use instead
 
-## Usage
-Put these lines somewhere in the main module:
+Now there is a better way to extract the version of the package.
+
+Assuming your package is named `mypackage`:
 ```python
-import poetry_version
+import importlib.metadata
 
-__version__ = poetry_version.extract(source_file=__file__)
+__version__ = importlib.metadata.version("mypackage")
 ```
+
+This code should work as is if you are using Python >= 3.8.
+
+For Python 3.6 and 3.7 you need to install a backport: https://pypi.org/project/importlib-metadata/
